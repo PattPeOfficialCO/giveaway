@@ -3,6 +3,7 @@
 
     // Dropdown on mouse hover
     $(document).ready(function () {
+        includeHTML();
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
                 $('.navbar .dropdown').on('mouseover', function () {
@@ -16,6 +17,7 @@
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
+        
     });
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -75,7 +77,14 @@
         format: 'LT'
     });
     var dt = new Date();
-    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+
+    var dateelement = document.getElementById("datetime");
+
+    if (dateelement !== undefined && dateelement !== null) {
+        dateelement.innerHTML = dt.toLocaleTimeString();
+    }
+
+    
     // Select all links with hashes
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
