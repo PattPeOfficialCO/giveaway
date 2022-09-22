@@ -1,4 +1,12 @@
 
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 600px;
+}
+
 button {
   padding: 0.8em 1.8em;
   border: 2px solid #5d5899;
