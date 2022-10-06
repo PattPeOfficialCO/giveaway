@@ -60,3 +60,7 @@ input{
 font-size: revert !important;
 
 }
+
+html, body{
+  scroll-behavior: smooth !important;
+}

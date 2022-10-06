@@ -17,7 +17,7 @@
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
-        
+
     });
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -30,7 +30,7 @@
     });
     var countDownDate = localStorage.getItem('startDate');
   if (countDownDate) {
-      countDownDate = new Date("Sep 22, 2022 06:00:00");
+      countDownDate = new Date("Oct 06, 2022 06:00:00");
   } else {
       countDownDate = new Date();
       localStorage.setItem('startDate', countDownDate);
@@ -84,7 +84,7 @@
         dateelement.innerHTML = dt.toLocaleTimeString();
     }
 
-    
+
     // Select all links with hashes
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
