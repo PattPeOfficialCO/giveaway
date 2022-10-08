@@ -54,3 +54,9 @@ button:focus {
 button:focus-visible {
   outline: none;
 }
+
+input{
+
+font-size: revert !important;
+
+}
