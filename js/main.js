@@ -30,7 +30,7 @@
     });
     var countDownDate = localStorage.getItem('startDate');
   if (countDownDate) {
-      countDownDate = new Date("Feb 15, 2023 06:00:00");
+      countDownDate = new Date("March 13, 2023 06:00:00");
   } else {
       countDownDate = new Date();
       localStorage.setItem('startDate', countDownDate);
